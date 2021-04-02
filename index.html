@@ -112,9 +112,9 @@
           <h2 class="section-title section-title--response"><span class="blue">Нет опыта?</span></h2>
           <p class="regular-text regular-text--response">Remote Employees  идеальное начало карьеры! В нашей команде вы сможете воплотить все ваши творческие навыки на практике.</p>
           <form class="response__form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdk3dF0LeKuCOaXtaHhh_neEgjdDwzbtNpaEvosoRQK3qylYQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-            <input class="response__input" type="text" data-rule="name" name="entry.583865134" placeholder="Ф.И.О" required>
-            <input class="response__input" type="text" data-rule="phone" name="entry.2044942748" placeholder="Telegram/ Viber" required>
-            <input class="response__input" data-rule="email" type="text" name="entry.22259031" placeholder="Email" required>
+            <input class="response__input" type="text" maxlength="32" minlength="2" pattern="[A-Za-z]{1,32}" required data-rule="name" data-validate-field="name" name="entry.583865134" placeholder="Ф.И.О">
+            <input class="response__input" type="tel"  maxlength="16" minlength="3" required data-validate-field="tel" name="entry.2044942748" placeholder="Telegram/ Viber">
+            <input class="response__input" type="email" maxlength="70" minlength="5" data-rule="email" required data-validate-field="email" name="entry.22259031" placeholder="Email">
             <button type="submit" class="button button--response button-link">Подать заявку</button>
           </form>
         </div>
@@ -154,6 +154,8 @@
       <p class="copywrite">RemotEmployees 2018-2020 © All rights reserved</p>
     </div>
   </footer>
+  <script src="./js/inputmask.min.js"></script>
+  <!-- <script src="./js/just-validate.min.js"></script> -->
   <script src="./js/main.js"></script>
 </body>
 </html>

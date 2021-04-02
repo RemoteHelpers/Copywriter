@@ -309,6 +309,7 @@
   .req__wrapper {
     flex-direction: column;
     padding-top: 120px;
+    padding-bottom: 0;
   }
 
   .img-holder--req {
@@ -364,7 +365,8 @@
 
   .about-us__wrapper {
     flex-direction: column;
-    padding-top: 0;
+    padding-top: 115px;
+    padding-bottom: 0;
   }
 
   .about-us__content {
@@ -377,7 +379,7 @@
   }
 
   .advantages {
-    padding-top: 0;
+    padding-top: 90px;
     padding-bottom: 200px;
   }
 
@@ -425,10 +427,6 @@
   .ad__text {
     margin-bottom: 20px;
     font-size: 14px;
-  }
-
-  .req__wrapper {
-    padding-bottom: 95px;
   }
 
   .section-title--about-us {
